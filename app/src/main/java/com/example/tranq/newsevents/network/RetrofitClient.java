@@ -12,7 +12,7 @@ public class RetrofitClient {
 
     private RetrofitClient() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://randomuser.me/")
+                .baseUrl("http://172.16.18.91/18175d1_mobile_100_fresher/public/api/v0/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         retrofitClient = retrofit.create(RetrofitClient.class);
@@ -25,7 +25,7 @@ public class RetrofitClient {
         return sInstance;
     }
 
-    public RetrofitClient getUserApi() {
+    public RetrofitClient getEventApi() {
         return sInstance.retrofitClient;
     }
 }
