@@ -6,7 +6,7 @@ package com.example.tranq.newsevents.utils;
 
 public class Const {
 
-    public static final String TAB_HOME = "HOME_POPULAR";
+    public static final String TAB_HOME = "HOME_POPULAR_hiep";
     public static final String TAB_NEAR = "NEAR";
     public static final String TAB_BROWSE = "BROWSE";
     public static final String TAB_MY_PAGE = "MY PAGE";
