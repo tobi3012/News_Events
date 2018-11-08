@@ -1,47 +1,36 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tvSignUp"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height"
-        android:text="@string/sign_up"
-        android:gravity="center"
-        android:background="@color/backgroud_sign_up_text_view"
-        android:textSize="@dimen/text_size_sign_up_text_view"
-        android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:text="@string/login"
+            android:gravity="center"
+            android:background="@color/backgroud_sign_up_text_view"
+            android:textSize="@dimen/text_size_sign_up_text_view"
+            android:layout_weight="1" />
+
 
     <LinearLayout
         android:id="@+id/ll_information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/tvSignUp"
-        android:padding="@dimen/padding_ll_infornation">
+        android:layout_below="@id/tvLogin"
+        android:padding="@dimen/padding_ll_infornation"
+        android:layout_marginTop="40dp">
 
         <EditText
+            android:paddingLeft="@dimen/padding_text"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_edit_text_my_page"
             android:textSize="@dimen/text_size_edit_text"
             android:background="@color/backgroud_edit_text_my_page"
             android:layout_weight="1"
-            android:paddingLeft="@dimen/padding_text"
-            android:hint="@string/sign_up_full_name"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/height_view_my_page">
-
-        </View>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/height_edit_text_my_page"
-            android:textSize="@dimen/text_size_edit_text"
-            android:background="@color/backgroud_edit_text_my_page"
-            android:layout_weight="1"
-            android:paddingLeft="@dimen/padding_text"
             android:hint="@string/email"/>
 
         <View
@@ -51,14 +40,13 @@
         </View>
 
         <EditText
+            android:paddingLeft="@dimen/padding_text"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_edit_text_my_page"
             android:textSize="@dimen/text_size_edit_text"
             android:background="@color/backgroud_edit_text_my_page"
             android:layout_weight="1"
-            android:paddingLeft="@dimen/padding_text"
             android:hint="@string/password"/>
-
 
     </LinearLayout>
 
@@ -70,7 +58,7 @@
         android:layout_below="@id/ll_information"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="@string/sign_up"
+        android:text="@string/login"
         android:textSize="@dimen/text_size_button"
         android:textColor="@color/text_color_button_my_page"/>
 
@@ -81,7 +69,7 @@
         android:layout_below="@id/btLogin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="@string/already_amember"
+        android:text="@string/forgot_password"
         android:textSize="@dimen/text_size_button"
         android:background="@android:color/transparent"/>
 

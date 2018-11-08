@@ -3,4 +3,8 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <!--My Page-->
+    <color name="backgroud_sign_up_text_view">#edecec</color>
+    <color name="backgroud_edit_text_my_page">#ededed</color>
+    <color name="text_color_button_my_page">#FFF</color>
 </resources>
