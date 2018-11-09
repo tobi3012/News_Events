@@ -11,7 +11,7 @@ import com.example.tranq.newsevents.adapter.ViewPagerAdapter;
 import com.example.tranq.newsevents.utils.Const;
 import com.example.tranq.newsevents.view.fragment.TabBrowseFragment;
 import com.example.tranq.newsevents.view.fragment.TabHomeFragment;
-import com.example.tranq.newsevents.view.fragment.TabMyPageFragment;
+import com.example.tranq.newsevents.view.fragment.TabMyPageSignupFragment;
 import com.example.tranq.newsevents.view.fragment.TabNearFragment;
 
 /**
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new TabHomeFragment(), Const.TAB_HOME);
         adapter.addFragment(new TabNearFragment(), Const.TAB_NEAR);
         adapter.addFragment(new TabBrowseFragment(), Const.TAB_BROWSE);
-        adapter.addFragment(new TabMyPageFragment(), Const.TAB_MY_PAGE);
+        adapter.addFragment(new TabMyPageSignupFragment(), Const.TAB_MY_PAGE);
         viewPager.setAdapter(adapter);
     }
 }

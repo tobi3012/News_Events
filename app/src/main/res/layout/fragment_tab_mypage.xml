@@ -2,6 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- TextView này là Tootbar , bỏ đi và setTitle Toobar = Sign up trong code java-->
     <TextView
         android:id="@+id/tvSignUp"
         android:layout_width="match_parent"
@@ -21,6 +22,7 @@
         android:padding="@dimen/padding_ll_infornation">
 
         <EditText
+            android:id="@+id/edFullName"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_edit_text_my_page"
             android:textSize="@dimen/text_size_edit_text"
@@ -36,6 +38,7 @@
         </View>
 
         <EditText
+            android:id="@+id/edEmailSignup"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_edit_text_my_page"
             android:textSize="@dimen/text_size_edit_text"
@@ -51,6 +54,7 @@
         </View>
 
         <EditText
+            android:id="@+id/edPasswordSignup"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_edit_text_my_page"
             android:textSize="@dimen/text_size_edit_text"
@@ -63,13 +67,13 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btSignup"
         android:textAllCaps="false"
-        android:id="@+id/btLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ll_information"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/marginTop_ll"
         android:text="@string/sign_up"
         android:textSize="@dimen/text_size_button"
         android:textColor="@color/text_color_button_my_page"/>
@@ -78,9 +82,9 @@
         android:id="@+id/btAlrealy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btLogin"
+        android:layout_below="@id/btSignup"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/marginTop_ll"
         android:text="@string/already_amember"
         android:textSize="@dimen/text_size_button"
         android:background="@android:color/transparent"/>
